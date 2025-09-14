@@ -1,7 +1,8 @@
 # Obligatorio_Devops
-Alumno: Claudio Cabrera y Juan Magrini
+Alumnos: Claudio Cabrera y Juan Magrini
 Curso: DevOps
 Proyecto: obligatorio-devops
+Profesor: Rodrigo Lopez
 
 
 Aplicación React contenedorizada y desplegada en Kubernetes usando Minikube.
