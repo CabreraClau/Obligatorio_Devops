@@ -17,17 +17,19 @@ Aplicación React contenedorizada y desplegada en Kubernetes usando Minikube.
 
 ---
 
-## Estructura del proyecto
+## 📂 Estructura del proyecto
+## 📂 Estructura del proyecto
 
+```text
 obligatorio-devops/
-
->├── Dockerfile
->├── package.json
->├── src/
->├── k8s/
->│ ├── deployment.yaml
->│ └── service.yaml
->└── README.md
+├── Dockerfile
+├── package.json
+├── src/
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+└── README.md
+```
 
 
 ---
