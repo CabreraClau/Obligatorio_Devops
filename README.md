@@ -21,13 +21,13 @@ Aplicación React contenedorizada y desplegada en Kubernetes usando Minikube.
 
 obligatorio-devops/
 
-├── Dockerfile
-├── package.json
-├── src/
-├── k8s/
-│ ├── deployment.yaml
-│ └── service.yaml
-└── README.md
+>├── Dockerfile
+>├── package.json
+>├── src/
+>├── k8s/
+>│ ├── deployment.yaml
+>│ └── service.yaml
+>└── README.md
 
 
 ---
@@ -49,30 +49,41 @@ obligatorio-devops/
 
 
 Luego se constuyó la imagen:
-docker build -t obligatorio-devops .
+> ```bash
+>docker build -t obligatorio-devops .
+> ```
 
 
 Se aplicaron los manifestos de Kubectl
-
-kubectl apply -f k8s/
+> ```bash
+>kubectl apply -f k8s/
+> ```
 
 
 Se verifico el pod que estuviera corriendo de manera corercta:
-kubectl apply -f k8s/
+> ```bash
+>kubectl apply -f k8s/
+> ```
 
 Se expuso la aplicacion localmente desde minikube 
-minikube service obligatorio-devops-service
-
+> ```bash
+>minikube service obligatorio-devops-service
+> ```
 
 
 Los comandos que fueron utiles:
 Para ver los logs del pod:
-kubectl logs obligatorio-devops-XXXX
+> ```bash
+>kubectl logs obligatorio-devops-XXXX
+> ```
 Pare entrar al contenedor:
-kubectl exec -it <nombre-del-pod> -- sh
+> ```bash
+>kubectl exec -it <nombre-del-pod> -- sh
+> ```
 Para ver los recursos desplegados:
-kubectl get all
-´´´
+> ```bash
+> kubectl get all
+> ```
 
 
 
