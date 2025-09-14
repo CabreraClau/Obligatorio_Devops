@@ -62,9 +62,9 @@ Se aplicaron los manifestos de Kubectl
 > ```
 
 
-Se verifico el pod que estuviera corriendo de manera corercta:
+Se verifico el pod que estuviera corriendo de manera correcta:
 > ```bash
->kubectl apply -f k8s/
+>kubectl get pods
 > ```
 
 Se expuso la aplicacion localmente desde minikube 
