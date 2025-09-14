@@ -20,6 +20,7 @@ Aplicación React contenedorizada y desplegada en Kubernetes usando Minikube.
 ## Estructura del proyecto
 
 obligatorio-devops/
+
 ├── Dockerfile
 ├── package.json
 ├── src/
