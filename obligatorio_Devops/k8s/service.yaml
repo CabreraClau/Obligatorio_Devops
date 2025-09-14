@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: obligatorio-devops-service
+spec:
+  selector:
+    app: obligatorio-devops
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
