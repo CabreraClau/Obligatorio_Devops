@@ -35,10 +35,11 @@ obligatorio-devops/
 
 > Personalmente nos paso que nos teniamos que aseugrar de usar el entorno Docker de Minikube antes de construir, lo descubrimos a prueba y error..
 La manera de solucionarlo fue con la siguiente linea de comando:
+> minikube start
+& minikube -p minikube docker-env --shell powershell | Invoke-Expression
 
 ## Pasos
-minikube start
-& minikube -p minikube docker-env --shell powershell | Invoke-Expression
+
 
 Luego se constuyó la imagen:
 docker build -t obligatorio-devops .
